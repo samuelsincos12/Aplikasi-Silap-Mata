@@ -22,10 +22,10 @@ Tampilan Rute | Tampilan Verifikasi Laporan
 ###  Tampilan Aplikasi Web
 
 1. Tampilan Login
-<img src="/Images/a_login.png" width="40%">
+<img src="/Images/a_login.png" width="70%">
 
 2. Tampilan Melihat Laporan
-<img src="/Images/a_lihat.png" width="40%">
+<img src="/Images/a_lihat.png" width="70%">
 
 3. Tampilan Data Petugas
-<img src="/Images/a_crew.png" width="40%">
+<img src="/Images/a_crew.png" width="70%">
