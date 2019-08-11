@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion rootProject.ext.tgt_sdk
+    defaultConfig {
+        applicationId "site.golock.sm"
+        minSdkVersion rootProject.ext.min_sdk
+        targetSdkVersion rootProject.ext.tgt_sdk
+        versionCode 1
+        versionName "1.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "com.android.support:appcompat-v7:$rootProject.and_sup"
+    implementation "com.android.support:design:$rootProject.and_sup"
+    implementation "com.android.support:recyclerview-v7:$rootProject.and_sup"
+    implementation "com.android.support:cardview-v7:$rootProject.and_sup"
+    implementation "de.hdodenhof:circleimageview:$rootProject.hd_cimg"
+    implementation "com.github.bumptech.glide:glide:$rootProject.glide"
+    kapt "com.github.bumptech.glide:compiler:$rootProject.glide"
+
+    implementation "com.google.android.gms:play-services-maps:$rootProject.gms_map"
+    implementation "com.google.android.gms:play-services-location:$rootProject.gms_loc"
+    implementation "com.github.jd-alexander:library:$rootProject.jd_alex"
+
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofit"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.retrofit"
+    implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.okhttp3"
+
+    implementation "com.jakewharton:butterknife:$rootProject.btrknife"
+    kapt "com.jakewharton:butterknife-compiler:$rootProject.btrknife"
+
+    testImplementation "junit:junit:$rootProject.junit"
+    androidTestImplementation "com.android.support.test:runner:$rootProject.trunner"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:$rootProject.tespresso"
+}

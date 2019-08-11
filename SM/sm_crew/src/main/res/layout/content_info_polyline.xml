@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/imgtop">
+
+            <TextView
+                    android:id="@+id/tTmp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="10 min"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorElectro"/>
+
+            <TextView
+                    android:id="@+id/k1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/tTmp"
+                    android:layout_marginTop="10dp"
+                    android:text="("
+                    android:textSize="16sp"/>
+
+            <TextView
+                    android:id="@+id/tJrk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/tTmp"
+                    android:layout_marginTop="4dp"
+                    android:padding="8dp"
+                    android:text="10 km"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorElectro"/>
+
+            <TextView
+                    android:id="@+id/k2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/tJrk"
+                    android:layout_marginTop="10dp"
+                    android:text=")"
+                    android:textSize="16sp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cNav"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/directions"
+                    android:layout_alignParentEnd="true"
+                    app:civ_border_width="3dp"
+                    app:civ_circle_background_color="@color/colorGrey1"
+                    app:civ_border_color="@color/colorElectro"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

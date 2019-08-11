@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SilapMataUser</string>
+    <string name="title_activity_maps">SM User</string>
+    <string name="zTitle">SILAP MATA</string>
+    <string name="zNetOff">Offline</string>
+    <string name="zNetOn">Online</string>
+    <string name="zILokasi">Info Lokasi</string>
+    <string name="zGPS">GPS Belum Aktif</string>
+    <string name="zError">Kesalahan Sistem</string>
+    <string name="zBack">Tekan sekali lagi untuk keluar !</string>
+    <string name="zPermission">Perizinan Gagal</string>
+    <string name="zJenis">Jenis Pelanggaran</string>
+    <string name="zKec">Panam</string>
+    <string name="zAlt">Jl. Bina Krida</string>
+    <string name="zLapor">Laporkan</string>
+    <string name="zKet">Keterangan</string>
+    <string name="zTLap">FORM LAPORAN</string>
+    <string name="zTitle1">Silap Mata</string>
+    <string name="zIKoneksi">Info Koneksi</string>
+    <string name="zMKoneksi">Koneksi internet bermasalah, silakan periksa koneksi internet anda dan coba lagi</string>
+    <string name="zOK">OK</string>
+</resources>

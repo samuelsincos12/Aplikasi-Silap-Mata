@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="55dp"
+        app:layout_behavior="site.golock.sm_user.util.LockAdapter">
+
+    <include android:id="@+id/vMrk" layout="@layout/content_info_marker"/>
+
+    <include android:id="@+id/vRep" layout="@layout/content_new_report"/>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:ignore="ContentDescription"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:background="@color/colorGrey1">
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/tBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize"
+            app:title="DAFTAR LAPORAN"
+            app:titleMarginStart="56dp"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Body3"
+            app:navigationIcon="@drawable/arrow_left" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/vSwR"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tBar">
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/vRec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

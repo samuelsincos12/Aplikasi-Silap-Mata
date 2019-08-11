@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="false"
+        tools:ignore="ContentDescription"
+        tools:context="site.golock.sm_crew.core.crew.CrewView">
+
+    <include
+            android:id="@+id/include"
+            layout="@layout/content_main"/>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:background="@color/transparenc2"/>
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/cTol"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cRpt"
+                android:layout_width="@dimen/imgsizetop"
+                android:layout_height="@dimen/imgsizetop"
+                android:layout_gravity="start"
+                android:layout_margin="5dp"
+                android:elevation="1dp"
+                android:src="@drawable/file_document_box_search_outline"
+                android:background="@drawable/oval1"
+                app:civ_border_width="3dp"
+                app:civ_border_color="@color/colorPrimary"/>
+
+        <TextView
+                android:id="@+id/tStt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/zTitle"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cPfl"
+                android:layout_width="@dimen/imgsizetop"
+                android:layout_height="@dimen/imgsizetop"
+                android:layout_gravity="end"
+                android:layout_margin="5dp"
+                android:elevation="1dp"
+                android:src="@drawable/account_tie"
+                app:civ_border_width="3dp"
+                app:civ_border_color="@color/colorWhite"/>
+
+        <ProgressBar
+                android:id="@+id/pBar"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="bottom"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/colorGrey1"
+                android:visibility="gone"
+                style="?android:attr/progressBarStyleHorizontal"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/cDir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="24dp"
+            android:elevation="3dp"
+            android:visibility="gone"
+            app:cardCornerRadius="6dp"
+            app:cardBackgroundColor="@color/colorPrimary">
+
+        <RelativeLayout
+                android:id="@+id/troute"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal">
+
+            <LinearLayout
+                    android:id="@+id/zfrom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="@dimen/imgtop"
+                    android:layout_marginBottom="10dp"
+                    tools:ignore="ObsoleteLayoutParam">
+
+                <ImageView
+                        android:id="@+id/iback"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/arrow_left"/>
+
+                <ImageView
+                        android:id="@+id/ifrom"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/marker_blue"
+                        android:layout_marginStart="12dp"/>
+
+                <TextView
+                        android:id="@+id/tFrm"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/back1"
+                        android:layout_toEndOf="@+id/ifrom"
+                        android:layout_marginStart="5dp"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="3dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="@string/zJln1"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorWhite"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_below="@id/zfrom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="@dimen/imgtop"
+                    tools:ignore="ObsoleteLayoutParam">
+
+                <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="wrap_content"/>
+
+                <ImageView
+                        android:id="@+id/ito"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/marker_red"
+                        android:layout_marginStart="12dp"/>
+
+                <TextView
+                        android:id="@+id/tToo"
+                        android:layout_below="@id/tFrm"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/back1"
+                        android:layout_toEndOf="@+id/ito"
+                        android:layout_marginStart="5dp"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="3dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="@string/zJln2"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <include
+            android:id="@+id/bSht"
+            layout="@layout/bottomsheet_main"/>
+
+    <FrameLayout
+            android:id="@+id/vFra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="26dp"
+            app:layout_anchor="@id/bSht"
+            app:layout_anchorGravity="top|center_horizontal|center">
+
+        <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="5dp"/>
+
+        <TextView
+                android:id="@+id/gtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:elevation="16dp"
+                android:text="@string/zGo"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"/>
+
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>
