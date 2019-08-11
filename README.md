@@ -28,4 +28,4 @@ Tampilan Rute | Tampilan Verifikasi Laporan
 <img src="/Images/a_lihat.png" width="40%">
 
 3. Tampilan Data Petugas
-<img src="/Images/petugas.png" width="40%">
+<img src="/Images/a_crew.png" width="40%">
